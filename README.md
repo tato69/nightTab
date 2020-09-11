@@ -49,6 +49,18 @@ A neutral new tab page accented with a chosen colour. Customise the layout, styl
 
 ---
 
+### Build docker image
+
+In order to build docker images, depending on your architecture run
+
+ - `docker build -f dockerfile -t myname:mytag .`
+
+or
+
+ - `docker build -f dockerfile.arm32v7 -t myname:mytag .`
+
+---
+
 ### Development
 
 When developing use:
