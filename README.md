@@ -59,6 +59,13 @@ or
 
  - `docker build -f dockerfile.arm32v7 -t myname:mytag .`
 
+To use the image created above
+
+ - `docker create --v /mylocalpath:/nightTab --publish 2225:80 --name nightTab myimage:latest`
+ - `docker run nightTab`
+
+NightTab will be availabe at http://localhost:2225
+
 ---
 
 ### Development
