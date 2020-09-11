@@ -10,6 +10,9 @@ RUN apt-get install -y nginx
 #change nginx document root folder
 RUN sed -i s@/var/www/html@/nighttab/build/web/@ /etc/nginx/sites-enabled/default
 
+#create a volume for persistence
+VOLUME /nighttab
+
 # clone master repo
 RUN git clone https://github.com/zombieFox/nightTab /nighttab
 
